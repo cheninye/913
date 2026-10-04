@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 162.249.127.141
+  server: 162.249.127.133
   port: 8443
   udp: true
   type: hysteria2
