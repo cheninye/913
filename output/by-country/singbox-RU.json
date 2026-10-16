@@ -36,25 +36,12 @@
       "password": "7eadc6dbe2ae"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-      "server": "freede.aiage.work",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "freede.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g",
-          "short_id": "57e7977c9011061c"
-        }
-      }
+      "server": "176.32.32.108",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
     },
     {
       "type": "hysteria2",
@@ -65,7 +52,7 @@
       "tls": {
         "enabled": true,
         "server_name": "match-stream.lovkisport.blog",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -77,7 +64,7 @@
       "tls": {
         "enabled": true,
         "server_name": "match-stream.lovkisport.blog",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -112,7 +99,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
