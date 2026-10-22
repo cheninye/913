@@ -30,9 +30,9 @@ proxies:
     public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
     short-id: 7271129440ade8fa
   servername: api.sakhalin.fyi
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: pl1.dedushka.top
+  server: 31.133.0.182
   port: 443
   udp: true
   type: trojan
@@ -53,6 +53,14 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: 92.118.150.146
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 2.26.225.89
   port: 8443
   udp: true
@@ -72,6 +80,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
+  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +92,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
+  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
