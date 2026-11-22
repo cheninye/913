@@ -4,32 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 104.17.147.208
+- name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  server: 144.31.4.18
   port: 443
   udp: true
   type: vless
-  uuid: 258ca28a-d982-4a40-b620-7c1c81108060
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   tls: true
-  servername: b.rack.sxsc.dpdns.org
+  servername: marginbirch.cleanfoodshop.org
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: b.rack.sxsc.dpdns.org
+    path: /media/ws/
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇵🇱 波兰 (Poland) 01 - xiaohe
 rules:
 - MATCH,PROXIES
