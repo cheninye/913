@@ -5,22 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "144.31.4.18",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+      "server": "104.17.147.208",
       "server_port": 443,
-      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
+      "uuid": "258ca28a-d982-4a40-b620-7c1c81108060",
       "tls": {
         "enabled": true,
-        "server_name": "marginbirch.cleanfoodshop.org",
+        "server_name": "b.rack.sxsc.dpdns.org",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/media/ws/"
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "b.rack.sxsc.dpdns.org"
+        }
       }
     },
     {
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
