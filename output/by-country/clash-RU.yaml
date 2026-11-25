@@ -30,15 +30,18 @@ proxies:
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 136.148.83.69
+  server: 147.45.175.81
   port: 443
   udp: true
   type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: xssite.webredirect.org
   skip-cert-verify: false
-  client-fingerprint: qq
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: xssite.webredirect.org
   port: 443
@@ -53,47 +56,11 @@ proxies:
   grpc-opts:
     grpc-service-name: grpc-ru
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 201.51.12.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 201.51.12.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  skip-cert-verify: false
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   server: 136.148.83.69
   port: 443
   udp: true
   type: vless
   uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
   tls: true
   servername: szqbx-ru-77dc.my-fade.cloud
   skip-cert-verify: false
@@ -108,9 +75,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -121,8 +85,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 rules:
 - MATCH,PROXIES
