@@ -5,20 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: ifi1.modemjibi.com
-  port: 993
-  udp: true
-  type: vless
-  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
-  tls: true
-  servername: ifi1.modemjibi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: mail1.besttotaldns.com
+  server: 65.109.171.194
   port: 443
   udp: true
   type: vless
@@ -34,13 +21,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 rules:
 - MATCH,PROXIES

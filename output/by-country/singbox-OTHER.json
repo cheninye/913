@@ -5,27 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "188.225.56.100",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.17.50.53",
       "server_port": 443,
-      "uuid": "b432a23a-acff-425c-bf69-70480cd6ed09",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "e2.cdnwh.icu",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
+        "server_name": "jp3.yohototo.top",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/segment/3078a41dd7eb/",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "e2.cdnwh.icu"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
@@ -34,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
